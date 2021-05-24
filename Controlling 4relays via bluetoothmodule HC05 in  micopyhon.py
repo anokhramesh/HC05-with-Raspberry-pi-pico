@@ -4,8 +4,8 @@ from time import sleep#importing sleep from time module
 HC05=UART(0,9600)#creating an object HC05 and declaring UART communication channel,boud rate
 relay_1=Pin(28,Pin.OUT)#creating an Object relay_1 and assign Pin 28 as an OUTPUT
 relay_2=Pin(20,Pin.OUT)#creating an Object relay_2 and assign Pin 20 as an OUTPUT
-relay_3=Pin(18,Pin.OUT)#creating an Object relay_1 and assign Pin 18 as an OUTPUT
-relay_4=Pin(19,Pin.OUT)#creating an Object relay_2 and assign Pin 19 as an OUTPUT
+relay_3=Pin(18,Pin.OUT)#creating an Object relay_3 and assign Pin 18 as an OUTPUT
+relay_4=Pin(19,Pin.OUT)#creating an Object relay_4 and assign Pin 19 as an OUTPUT
 while True:# creating an infinite loop to checking is there is any data availabel?
     if HC05.any()>0:
         data=HC05.read(1)#creating a variable(data)and saving the availabel data from Hc05.
